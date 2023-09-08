@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 1rem;
+    font-size: 1.5rem;
+    margin-left: 11vw;
+    font-weight: 900;
+}
+
+.head {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head li {
+    list-style: none;
+    margin: 1rem;
+}
+
+.head li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    font-weight: 900;
+}
+
+.head li a:hover{
+    transition: 1s ease-in;
+    color: lightcoral;
+}
+
+.menu {
+    display: none;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 9vh;
+    margin-top: 10vh;
+}
+
+.button {
+    display: block;
+    border: 2px solid black;
+    border-radius: 22px;
+    background-color: lightcoral;
+    color: white;
+    padding: 0.8vh;
+    margin: 1vh;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+.icon {
+    color: black;
+    width: 2vw;
+    margin: 1.8vh;
+    font-size: 35px;
+}
+
+.left {
+    margin-top: 4rem;
+}
+
+.left h1 {
+    margin: 1.8vh;
+    font-size: 3vw;
+}
+
+.left p {
+    margin: 1.3vh;
+    font-size: 2vw;
+}
+
+.right img {
+    width: 30vw;
+    height: 50vh;
+
+}
+
+/* About Section */
+.ab-head {
+    padding: 2vw;
+    font-size: 3rem;
+    margin-left: 9vw;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1vh;
+}
+
+.ab-left img {
+    width: 34vw;
+    height: 38vh;
+}
+
+.ab-right {
+    width: 40vw;
+    height: 38vh;
+}
+
+.ab-right p {
+    font-size: 1.5rem;
+}
+
+/* Skills Section */
+.skill {
+    background-color: lightcoral;
+}
+
+.skill h1 {
+    padding: 1vw;
+    font-size: 3rem;
+    margin-left: 10vw;
+    color: white;
+}
+
+.list {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list1 li {
+    font-size: 2rem;
+    margin: 1vw;
+    color: white;
+    padding: 0.3vh;
+}
+
+
+#services {
+    padding: 30px 0;
+    margin: 7vh;
+    
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: blanchedalmond;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition:  0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: grey;
+
+}
+
+/* Contact section */
+.contact h1 {
+    padding: 2vw;
+    font-size: 3rem;
+    margin-left: 9vw;
+    color: black;
+}
+
+.project {
+    width: 80%;
+    margin-left: 11vw;
+}
+
+.con {
+    width: 80%;
+    margin-left: 11vw;
+}
+
+.con1 {
+    display: flex;
+}
+
+.con1 h1,
+h3 {
+    padding: 0.5rem;
+}
+
+/* footer section */
+footer {
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+footer h3 {
+    margin-left: 40vw;
+    font-size: 2rem;
+}
+
+.foot {
+    display: flex;
+}
+
+@media (min-width: 325px) and (max-width: 915px) {
+   /* Header */
+    .logo {
+        margin-left: 1vw;
+    }
+ 
+    .head li a {
+        padding: 0px;
+    }
+
+    .list1 li {
+        font-size: 1.3rem;
+    }
+    .display {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+        font-size: 6vw;
+        font-weight: 600;
+    }
+    /* Main */
+    .main{
+        margin-top: 0px;
+    }
+
+    .left h1 {
+        font-size: 9vw;
+    }
+
+    .left p {
+        font-size: 5vw;
+    }
+
+    .button{
+        font-size: 5.5vw;
+        margin-left: 22vw;   
+    }
+    .icon1{
+        margin-left: 22vw;
+    }
+    /* Skills */
+    .skill h1 {
+        font-size: 2rem;
+    }
+
+    /* About */
+    .ab-head {
+        font-size: 2rem;
+    }
+
+    .ab-left img{
+        display: none;
+    }
+
+    .ab-right {
+        width: 90vw;
+    }
+
+    .ab-right p{
+        font-size: 1.2rem;
+    }
+
+   
+#services {
+    padding: 30px 0;
+    margin: 7vh;
+    
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: blanchedalmond;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition:  0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: blue;
+
+}
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+    /* Contact */
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+    /* footer */
+    footer h3 {
+        margin-left: 3vw;
+        font-size: 1.5rem;
+    }
+
+    .foot a{
+        font-size: 1.5rem;
+    }
+}
